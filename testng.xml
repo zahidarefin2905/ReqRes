@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/zahid/OneDrive/Documents/Automation/rest-assured-automation/ReqRes">
+        <classes>
+            <class name="testCases.Get_Post">
+                <methods>
+                    <include name="test_Get"/>
+                    <include name="test_Post"/>
+                </methods>
+            </class>
+            <class name="testCases.Put_Patch_Delete">
+                <methods>
+                    <include name="test_Put"/>
+                    <include name="test_Patch"/>
+                    <include name="test_Delete"/>
+                </methods>
+            </class>
+            <class name="testCases.test_example">
+                <methods>
+                    <include name="test_1"/>
+                    <include name="test_2"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
